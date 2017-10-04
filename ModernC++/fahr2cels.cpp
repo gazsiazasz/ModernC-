@@ -6,14 +6,14 @@
 //  Copyright © 2017. Gajdos Gábor. All rights reserved.
 //
 
-#include <stdio.h>
+#include <iostream>
 int main()
 {
-    int fahr;
-
-    for ( fahr = -100; fahr <= 400; fahr += 25 )
+    for( int fahr = -100; fahr <= 400; fahr += 20 )
     {
-        printf( "Fahr = %d\tCels = %f\n", fahr, 5./9.*(fahr-32) );
+        std::cout << "fahr = " << fahr
+        << ", cels = " << 5./9. * (fahr-32)
+        << std::endl;
     }
     return 0;
 }
