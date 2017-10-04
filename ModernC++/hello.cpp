@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  hello.cpp
 //  ModernC++
 //
 //  Created by Gajdos Gábor on 2017. 10. 04..

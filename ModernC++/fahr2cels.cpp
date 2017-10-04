@@ -7,12 +7,19 @@
 //
 
 #include <iostream>
+#include <iomanip>
+
+const int lower = -100;
+const int upper =  400;
+const int step  =   40;
+
 int main()
 {
-    for( int fahr = -100; fahr <= 400; fahr += 20 )
+    for( int fahr = lower; fahr <= upper; fahr += step )
     {
-        std::cout << "fahr = " << fahr
-        << ", cels = " << 5./9. * (fahr-32)
+        std::cout << "fahr = " << std::setw(4) << fahr
+        << ", cels = " << std::fixed << std::setw(7)
+        << std::setprecision(2) << 5./9. * (fahr-32)
         << std::endl;
     }
     return 0;
