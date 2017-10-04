@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C236F7D1F8546F000823E77 /* helloworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C236F7C1F8546F000823E77 /* helloworld.cpp */; };
+		9C236F901F85485C00823E77 /* fahr2cels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C236F831F85481600823E77 /* fahr2cels.cpp */; };
+		9C236F9C1F85487200823E77 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C236F7C1F8546F000823E77 /* hello.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C236F771F8546F000823E77 /* CopyFiles */ = {
+		9C236F871F85484000823E77 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9C236F931F85486800823E77 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +33,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C236F791F8546F000823E77 /* ModernC++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ModernC++"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C236F7C1F8546F000823E77 /* helloworld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = helloworld.cpp; sourceTree = "<group>"; };
+		9C236F7C1F8546F000823E77 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
+		9C236F831F85481600823E77 /* fahr2cels.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fahr2cels.cpp; sourceTree = "<group>"; };
+		9C236F891F85484000823E77 /* fahr2cels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fahr2cels; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C236F951F85486800823E77 /* hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hello; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C236F761F8546F000823E77 /* Frameworks */ = {
+		9C236F861F85484000823E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C236F921F85486800823E77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,7 +68,8 @@
 		9C236F7A1F8546F000823E77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C236F791F8546F000823E77 /* ModernC++ */,
+				9C236F891F85484000823E77 /* fahr2cels */,
+				9C236F951F85486800823E77 /* hello */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +77,8 @@
 		9C236F7B1F8546F000823E77 /* ModernC++ */ = {
 			isa = PBXGroup;
 			children = (
-				9C236F7C1F8546F000823E77 /* helloworld.cpp */,
+				9C236F7C1F8546F000823E77 /* hello.cpp */,
+				9C236F831F85481600823E77 /* fahr2cels.cpp */,
 			);
 			path = "ModernC++";
 			sourceTree = "<group>";
@@ -65,21 +86,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C236F781F8546F000823E77 /* ModernC++ */ = {
+		9C236F881F85484000823E77 /* fahr2cels */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C236F801F8546F000823E77 /* Build configuration list for PBXNativeTarget "ModernC++" */;
+			buildConfigurationList = 9C236F8D1F85484000823E77 /* Build configuration list for PBXNativeTarget "fahr2cels" */;
 			buildPhases = (
-				9C236F751F8546F000823E77 /* Sources */,
-				9C236F761F8546F000823E77 /* Frameworks */,
-				9C236F771F8546F000823E77 /* CopyFiles */,
+				9C236F851F85484000823E77 /* Sources */,
+				9C236F861F85484000823E77 /* Frameworks */,
+				9C236F871F85484000823E77 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ModernC++";
-			productName = "ModernC++";
-			productReference = 9C236F791F8546F000823E77 /* ModernC++ */;
+			name = fahr2cels;
+			productName = fahrenheit;
+			productReference = 9C236F891F85484000823E77 /* fahr2cels */;
+			productType = "com.apple.product-type.tool";
+		};
+		9C236F941F85486800823E77 /* hello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C236F991F85486800823E77 /* Build configuration list for PBXNativeTarget "hello" */;
+			buildPhases = (
+				9C236F911F85486800823E77 /* Sources */,
+				9C236F921F85486800823E77 /* Frameworks */,
+				9C236F931F85486800823E77 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hello;
+			productName = helloworld;
+			productReference = 9C236F951F85486800823E77 /* hello */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +129,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Gajdos Gábor";
 				TargetAttributes = {
-					9C236F781F8546F000823E77 = {
+					9C236F881F85484000823E77 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					9C236F941F85486800823E77 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -109,17 +151,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C236F781F8546F000823E77 /* ModernC++ */,
+				9C236F881F85484000823E77 /* fahr2cels */,
+				9C236F941F85486800823E77 /* hello */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9C236F751F8546F000823E77 /* Sources */ = {
+		9C236F851F85484000823E77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C236F7D1F8546F000823E77 /* helloworld.cpp in Sources */,
+				9C236F901F85485C00823E77 /* fahr2cels.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C236F911F85486800823E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C236F9C1F85487200823E77 /* hello.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +280,7 @@
 			};
 			name = Release;
 		};
-		9C236F811F8546F000823E77 /* Debug */ = {
+		9C236F8E1F85484000823E77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -238,7 +289,25 @@
 			};
 			name = Debug;
 		};
-		9C236F821F8546F000823E77 /* Release */ = {
+		9C236F8F1F85484000823E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDP99N9N6M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C236F9A1F85486800823E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDP99N9N6M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C236F9B1F85486800823E77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -259,11 +328,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C236F801F8546F000823E77 /* Build configuration list for PBXNativeTarget "ModernC++" */ = {
+		9C236F8D1F85484000823E77 /* Build configuration list for PBXNativeTarget "fahr2cels" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C236F811F8546F000823E77 /* Debug */,
-				9C236F821F8546F000823E77 /* Release */,
+				9C236F8E1F85484000823E77 /* Debug */,
+				9C236F8F1F85484000823E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C236F991F85486800823E77 /* Build configuration list for PBXNativeTarget "hello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C236F9A1F85486800823E77 /* Debug */,
+				9C236F9B1F85486800823E77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
