@@ -11,7 +11,10 @@
 
 const int lower = -100;
 const int upper =  400;
-const int step  =   40;
+const int step  =   20;
+
+// declaration of the fahr2cels function
+double fahr2cels(double);
 
 int main()
 {
@@ -19,8 +22,15 @@ int main()
     {
         std::cout << "fahr = " << std::setw(4) << fahr
         << ", cels = " << std::fixed << std::setw(7)
-        << std::setprecision(2) << 5./9. * (fahr-32)
+        << std::setprecision(2)
+        << fahr2cels(fahr)  // call of fahr2cels(double)
         << std::endl;
     }
     return 0;
+}
+
+// definition of the fahr2cels function
+double fahr2cels(double f)
+{
+    return 5./9. * (f-32);
 }
